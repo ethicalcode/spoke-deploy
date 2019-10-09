@@ -140,7 +140,7 @@ def check_heroku_name():
 
 @app.route('/deploy')
 def create_heroku_deploy_button():
-    session['template'] = 'https://github.com/MoveOnOrg/Spoke/tree/v1.4'
+    session['template'] = 'https://github.com/MoveOnOrg/Spoke/tree/main'
     session['heroku_base_url'] = 'https://{}.herokuapp.com'.format(session['app_name'])
     deploy_url = '''
     https://heroku.com/deploy?

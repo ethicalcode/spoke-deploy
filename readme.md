@@ -4,10 +4,10 @@ An app to automatically deploy Spoke(https://opensource.moveon.org/spoke/) to He
 
 ## Getting Started
 
-You can deploy this app to Heroku too:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+You can try Spoke Deploy at https://spokedeploy.herokuapp.com
 
-Or you can use the one at https://spokedeploy.herokuapp.com
+You can deploy this deployer to your own Heroku too:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## What does it do?
 

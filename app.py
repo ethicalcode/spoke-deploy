@@ -95,7 +95,7 @@ def steps():
 
 @app.route('/create_applications', methods=['GET','POST'])
 def create_applications():
-    session['authzero_domain'] = '{}.auth0.com'.format(request.form['authzero_domain'])
+    session['authzero_domain'] = request.form['authzero_domain']
     session['authzero_token'] = request.form['authzero_token']
     session['twilio_account_sid'] = request.form['twilio_account_sid']
     session['twilio_auth_token'] = request.form['twilio_auth_token']

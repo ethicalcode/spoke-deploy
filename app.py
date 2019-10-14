@@ -157,7 +157,8 @@ def create_heroku_deploy_button():
     env[PHONE_NUMBER_COUNTRY]=AU&
     env[DST_REFERENCE_TIMEZONE]=Australia/Melbourne&
     env[NOT_IN_USA]=true&
-    env[BULK_SEND_CHUNK_SIZE]=20
+    env[BULK_SEND_CHUNK_SIZE]=20&
+    evn[ALLOW_SEND_ALL]=true
     '''.format(**session).replace('\n','').replace(' ','')
     return render_template("deploy.html", deploy_url=deploy_url)
 

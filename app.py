@@ -76,7 +76,7 @@ def create_twilio_application(twilio_account_sid,twilio_auth_token):
         numbers = client.available_phone_numbers(country) \
                .mobile \
                .list()
-        numbers = [phone for phone in allphones if phone.address_requirements == 'none']
+        numbers = [phone for phone in numbers if phone.address_requirements == 'none']
         if len(numbers) > 0:
             found = True
 
